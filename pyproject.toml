@@ -1,0 +1,38 @@
+[project]
+name = "acc_tariff"
+description = "Make IMPORT Great Again!"
+requires-python = ">=3.12"
+authors = [{ name = "dboyliao", email = "qmalliao@gmail.com" }]
+classifiers = ["Programming Language :: Python :: 3"]
+dynamic = ["version"]
+dependencies = []
+
+[build-system]
+requires = ["setuptools>=65.4.1", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+package-dir = { "" = "src" }
+
+[tool.setuptools.dynamic]
+version = { attr = "acc_tariff._version.__version__" }
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.black]
+line-length = 88
+
+[tool.isort]
+profile = "black"
+line_length = 88
+
+[dependency-groups]
+dev = [
+    "black>=25.1.0",
+    "flake8>=7.2.0",
+    "ipython>=9.1.0",
+    "isort>=6.0.1",
+    "numpy>=2.2.4",
+    "pip>=25.0.1",
+]
