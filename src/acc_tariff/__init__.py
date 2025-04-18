@@ -1,8 +1,6 @@
 import sys
 import time
 from importlib.abc import Loader, MetaPathFinder
-from importlib.machinery import ExtensionFileLoader, FileFinder
-from importlib.util import spec_from_loader
 
 from ._logger import logger
 from ._version import __version__
