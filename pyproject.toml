@@ -1,6 +1,8 @@
 [project]
 name = "acc_tariff"
 description = "Make IMPORT Great Again!"
+readme = "README.md"
+urls = { "Homepage" = "https://github.com/dboyliao/acc_tariff" }
 requires-python = ">=3.12"
 authors = [{ name = "dboyliao", email = "qmalliao@gmail.com" }]
 classifiers = ["Programming Language :: Python :: 3"]
