@@ -1,3 +1,19 @@
+This repo is inspired by the [hxu296/tariff](https://github.com/hxu296/tariff) package.
+
+The key difference between `acc-tariff` and `tariff` is that the import tariff at execution time will accumulate across submodules!
+
+NOTE: This repo is for educational purposes only and is not designed to run in any production environment.
+
+# Install
+```bash
+$ pip install acc-tariff
+```
+
+or `uv`
+```bash
+$ uv sync
+```
+
 # Example
 
 ```python
